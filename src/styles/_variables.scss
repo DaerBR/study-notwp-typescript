@@ -1,0 +1,61 @@
+// Typography
+$font-size-base: 14px;
+$calibri: 'Calibri';
+$helvetica: 'Helvetica';
+
+// Colors
+$red: #ff0000;
+$white: #fff;
+$black: #333;
+$purple: #d2031f;
+$grey: #989898;
+$button-grey: #ececec;
+$dark-grey: #333;
+$light-grey: #d5d5d5;
+$super-light-grey: #f1f1f1;
+$url-blue: #0073aa;
+$transparent-quarter: rgba(0,0,0,0.25);
+
+$facebook: #3b5998;
+$twitter: #55acee;
+$pinterest: #bd081c;
+
+// Breakpoints
+$laptop: 1440px;
+$small-laptop: 1280px;
+$tablet-landscape: 1024px;
+$tablet-portrait: 768px;
+$mobile: 414px;
+$mobile-small: 320px;
+
+
+@mixin laptop {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
+}
+@mixin small-laptop {
+  @media (max-width: #{$small-laptop}) {
+    @content;
+  }
+}
+@mixin tablet-landscape {
+  @media (max-width: #{$tablet-landscape}) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+  @media (max-width: #{$tablet-portrait}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+@mixin mobile-small {
+  @media (max-width: #{$mobile-small}) {
+    @content;
+  }
+}
